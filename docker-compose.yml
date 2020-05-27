@@ -3,11 +3,11 @@ services:
   books:
     build: './books'
     ports:
-      - "7766:7766"
+      - "6677:3000"
     depends_on: 
       - auth
 
   auth:
     build: './auth'
     ports:
-      - "6677:6677"
+      - "7766:3005"
